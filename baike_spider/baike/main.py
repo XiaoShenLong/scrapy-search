@@ -1,0 +1,10 @@
+import sys
+sys.getdefaultencoding()
+
+from scrapy.cmdline import execute
+
+import os
+
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
+execute(["scrapy", "crawl" , "baike"])
